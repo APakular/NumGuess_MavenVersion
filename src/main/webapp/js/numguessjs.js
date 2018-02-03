@@ -16,6 +16,16 @@
          }
 
         function guessLink(givenValue) {
+
+          //  document.getElementById("picturecontent").
+                 var par = document.getElementById("picturecontent");
+            // var img = document.createElement('img');
+            // img.src = givenValue+'.jpg';
+            // par.appendChild(img);
+
+        par.innerHTML = '<img width="139" height="186" src="' + givenValue+'.jpg' + '" />';
+
+
             xmlHttp = new XMLHttpRequest();
             xmlHttp.onreadystatechange=callback;
             var url ="NumGenServlet"+"?requestGuessNumber="+givenValue;
