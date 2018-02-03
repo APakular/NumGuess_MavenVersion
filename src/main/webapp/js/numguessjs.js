@@ -23,7 +23,7 @@
             // img.src = givenValue+'.jpg';
             // par.appendChild(img);
 
-        par.innerHTML = '<img width="139" height="186" src="' + givenValue+'.jpg' + '" />';
+        par.innerHTML = '<img width="239" height="286" src="' + givenValue+'.jpg' + '" />';
 
 
             xmlHttp = new XMLHttpRequest();
@@ -54,14 +54,14 @@
 
                  if(keySuccess=="false") {
                      if (keyHint == "higher")
-                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Higher one!";
+                         document.getElementById("serverResponse").innerHTML = "Nu, nu e bine! Incearca mai la dreapta!";
                      else if (keyHint == "lower")
-                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Lower one!";
+                         document.getElementById("serverResponse").innerHTML = "Nu, nu e bine! Incearca mai la stanga!";
                  }
                  else
                  if(keySuccess=="true")
                  {
-                     document.getElementById("serverResponse").innerHTML = "Congrats, you guessed the number " + document.getElementById("number").value + " after " + keyNrGuesses + " guesses.";
+                     document.getElementById("serverResponse").innerHTML = "Felicitare, acum sti cine este cel mai prost jucator de la FCSB ! " + document.getElementById("number").value + " Dupa " + keyNrGuesses + " incercari.";
                  }
              }
          }
